@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>   
+<title>Nitesh Garodia||Portfolio||</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body>
+	
+<p>Nitesh</p>
+<div style="color:blue; font-size:40px; ">
+	<p>Garodia</p>
+</div>
+
+<h1>JUET</h1>
+<div style="text-align:center;">
+<img src="images/nitesh.jpg" alt="Nitesh Garodia image" style="width:200px;height:200px;padding-bottom: 1200px;">
+</div>
+
+</body>
+</html> 

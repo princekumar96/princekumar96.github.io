@@ -1,0 +1,102 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> LEARNING JAVA SCRIPT</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+
+<script >
+ function changeCSSUsingJQuery() {
+//$(selector).action()
+
+//$("input").hide();
+//$("input").fadeOut(5000); 
+
+
+//hide user name,once username disappears,hide password fields
+
+   /*$("#usr").fadeOut(2000,function()
+     {
+        $("#pass").fadeOut(2000);
+    }); */
+
+
+// Animate function:::::
+/*
+    $("input").animate({
+        height:'-=50px',
+        width :'-=70px'
+    });  */
+
+
+
+    // element Dance function
+
+    setInterval(function()
+    {
+        danceInput();
+    } ,1000);
+    danceInput();
+$("button").css("height",'100px'); 
+ }	
+
+ function danceInput()
+ { 
+    $("input").animate({ height:'5px',width :'5px'}, function()
+    {
+     $("input").animate({
+        height:'20px',
+        width :'120px'});
+    } );
+ };
+
+
+
+
+ //jQuery to find out whether page is loaded or not
+$(document).ready(
+function() 
+   {
+	 //alert("page is loaded now");
+	 //$("input").css('background-color','blue').css('border','2px solid red');
+
+     //use of this keyword to click 1 UI that should b disappear
+     debugger;  // * means applied the function on all the elements
+     //$("*").click(
+
+     $("*").click(
+        function(){
+            //alert("wow");
+            debugger;
+            if(this.tagName == "BODY" || this.tagName == "HTML") { return;}
+            $(this).hide(); 
+        }
+     )
+    }
+);
+
+</script>
+
+
+
+</head>
+<p id="demo"></p>
+<body id="sapUI" >
+     <input id ="usr" name="UserName">
+     <br>
+     <input id="pass"  type="PassWord">
+     <br>
+     <label id="label" style="color:red;display:none">Invalid username or password</label>
+     <button onclick="simpleMethod()">Login</button><br>
+     <button onclick="changeCSSUsingJQuery()">jQuery</button>
+     <button onclick="alert('Hi, This is Nitesh Garodia welcomes yous')">Click Me</button>
+ 	 <button onclick="nextAction()">Next</button>
+ 	 <button onclick="addNewElement()">Add New</button>
+ 	 <button onmouseout ="document.getElementById('demo').innerHTML=Date()">
+ 	 current Date &amp; Time</button>
+ 	  
+</body>
+</html>

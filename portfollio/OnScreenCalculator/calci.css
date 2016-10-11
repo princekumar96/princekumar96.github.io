@@ -1,0 +1,90 @@
+
+#calculator{
+	width: 325px;
+	height: auto;
+	margin: 100px auto;
+	padding: 20px 20px 10px; 
+	background: aqua;
+
+}
+
+/* Top Portion */
+
+.top{
+	margin-bottom: 10px;
+}
+
+.top .screen{
+	height: 40px;
+	width: 230px;
+	float: right;
+	padding: 0 10px;
+	background: grey;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	color: white;
+
+	/* TYPOGRAPHY */
+
+    font-size: 15px;
+    line-height: 40px;
+    color: white;
+    text-align: right;
+    letter-spacing: 1px;
+
+}
+
+.keys,.top{
+	overflow: hidden;
+	/*The overflow property specifies what to do 
+	if the content of an element exceeds the size 
+of the element's box. */
+}
+.keys  .operator{
+	margin-left: 38px;
+}
+
+.keys span,
+.top .clear{
+	float: left;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	width: 66px;
+	height: 36px;
+	border-radius: 3px;
+	margin: 0 7px 11px 0;
+	color: black;
+	font:bold;
+	line-height: 36px;
+	text-align: center;
+	user-select:none;
+	background-color: pink;
+	/*The user-select property in CSS 
+	controls how the text in an element 
+	is allowed to be selected. For example,
+	 it can be used to make text unselectable */
+	 transition: all 0.2s ease;
+}
+
+.keys .operator{
+	margin-right: 0px;
+	background: blue;
+}
+
+.keys span:hover{
+	background: green;
+	color: white;
+}
+
+.keys span.Equal:hover{
+	background:red;
+	color: white;
+	 
+}
+
+.top span.clear:hover{ 
+	box-shadow: 0px 4px #FF7C87;
+	color: white;
+}
+
